@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<title>RESUME</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js""></script>
+		<script>
+			$(document).ready(function(){
+			$(".full_info_wrap .tabs ul li").click(function(){
+				$(".full_info_wrap .tabs ul li").removeClass("active");
+				$(this).addClass("active");
+
+				var datali = $(this).attr("data-li");
+				
+
+				$(".full_info_item").hide();
+
+				if(datali == "experience"){
+					$(".experience").show();
+				}
+				else if(datali == "education"){
+					$(".education").show();
+				}
+				else if(datali == "contact"){
+					$(".contact").show();
+				}
+				else{
+					console.log("Loding...");
+				}
+			})
+		})
+	</script>
+</head>
+<body style="background-color:black;">
+
+<div class="wrapper">
+   <div class="resume">
+      
+       <div class="profile_info">
+            <div class="profile_img">
+              <img src="profile.jpg" alt="profile_img">
+            </div>
+            <div class="profile_data">
+                <p class="name">JAN MARLOW LUCIDO MANLULU</p>
+				<span><i class="fas fa-map-marker-alt"></i> Palangue 3 Naic, Cavite</span>
+            </div>
+            
+        </div>  
+      
+       <div class="skills">
+	       <div class="title">
+	          Skills
+	       </div>
+	       <ul>
+	         <li>
+	           <div class="skill_item html">
+	             <div class="icon"></div>
+	             <div class="text">HTML</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item css">
+	             <div class="icon"></div>
+	             <div class="text">CSS</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item js">
+	             <div class="icon"></div>
+	             <div class="text">Javascript</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item photoshop">
+	             <div class="icon"></div>
+	             <div class="text">Photoshop</div>
+	           </div>
+	         </li>
+			  <li>
+	           <div class="skill_item c++">
+	             <div class="icon"></div>
+	             <div class="text">C++</div>
+	           </div>
+	         </li>
+			  <li>
+	           <div class="skill_item python">
+	             <div class="icon"></div>
+	             <div class="text">Python</div>
+	           </div>
+	         </li>
+	       </ul>
+	    </div>
+     
+        <div class="full_info_wrap">
+            <div class="tabs">
+                <ul>
+                    <li data-li="experience" class="active">Hobbies/Interest</li>
+                    <li data-li="education">Education</li>
+                    <li data-li="contact">Contact</li>  
+                </ul>  
+            </div>  
+            
+            <div class="full_info">
+                <div class="full_info_item experience">
+                    <div class="title">HOBBIES/INTEREST</div>
+
+                    <div class="info_wrap">
+                    	<ul>
+                    		<li>
+								<div class="info_item">
+									<div class="info_title">
+										Basketball
+									</div>
+								</div>
+                    		</li>
+							
+                    		<li>
+								<div class="info_item">
+									<div class="info_title">
+										Editing
+									</div>
+								</div>
+                    		</li>
+							
+                    		<li>
+								<div class="info_item">
+									<div class="info_title">
+										Watching Anime
+									</div>	
+								</div>
+                    		</li>
+							
+							<li>
+								<div class="info_item">
+									<div class="info_title">
+										Travel
+									</div>	
+								</div>
+                    		</li>
+							<li>
+								<div class="info_item">
+									<div class="info_title">
+										Listening to Music
+									</div>	
+								</div>
+                    		</li>
+                    	</ul>
+                    </div>
+                </div>  
+                <div class="full_info_item education" style="display: none;">
+                  <div class="title">EDUCATION</div>
+
+                  <div class="info_wrap">
+                    	<ul>
+						<li>
+                    			<div class="sub_title">
+                    				COLLEGE
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										CAVITE STATE UNIVERSITY MAIN CAMPUS 
+									</div>
+									<div class="data">
+										Indang, Cavite
+									</div>
+								</div>
+                    		</li>
+                    		<li>
+                    			<div class="sub_title">
+                    				SENIOR HIGH SCHOOL
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										LUMAMPONG NATIONAL HIGH SCHOOL INDANG ANNEX 
+									</div>
+									<div class="data">
+										J. Dimabiling Street Indang, Cavite
+									</div>
+								</div>
+                    		</li>
+                    		<li>
+                    			<div class="sub_title">
+                    				JUNIOR HIGH SCHOOL	
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										SALVACION NATIONAL HIGH SCHOOL
+									</div>
+									<div class="data">
+										Salvacion Pilar, Sorsogon
+									</div>
+								</div>
+                    		</li>
+							<li>
+                    			<div class="sub_title">
+                    				ELEMENTARY	
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										PALANGUE 3 ELEMENTARY SCHOOL
+									</div>
+									<div class="data">
+										PALANGUE 3 NAIC, CAVITE
+									</div>
+								</div>
+                    		</li>
+                    	</ul>
+                    </div>
+                </div>  
+                <div class="full_info_item contact" style="display: none;">
+                  <div class="title">CONTACT</div>
+
+                  <div class="info_wrap">
+                  	<ul>
+						<li>
+                  			<span class="info_q">Phone Number :</span>
+                  			<span class="info_a">09050272301</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">Email :</span>
+                  			<span class="info_a">janmarlow4@gmail.com</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">Facebook :</span>
+                  			<span class="info_a">facebook.com/janz.offic1al</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">Instagram :</span>
+                  			<span class="info_a">instagram.com/janz.offic1al</span>
+                  		</li>
+                 
+                  	</ul>
+                  </div>
+                </div>  
+            </div> 
+        </div>
+     
+   </div>
+</div>
